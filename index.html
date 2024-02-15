@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<title>Everest Wild Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-gray w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-black w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container">
+        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <img src="./resources/Index/Me.png" style="width:45%;" class="w3-round"><br><br>
+        <h4><b>Everest Wild</b></h4>
+        <p class="w3-text-gray">Also known as ShadOblivion</p>
+    </div>
+    <div class="w3-bar-block">
+        <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+    </div>
+    <div class="w3-panel w3-large">
+        <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>-->
+        <i onclick="window.location='https://www.linkedin.com/in/everest-wild/'" class="fa fa-linkedin w3-hover-opacity"></i>
+        <i onclick="window.location='https://www.instagram.com/shadoblivion/'" class="fa fa-instagram w3-hover-opacity"></i>
+        <i onclick="window.location='https://www.youtube.com/channel/UCKuNmyCWcW5YIt2N17e2W_Q'" class="fa fa-youtube w3-hover-opacity"></i>
+        <!--<i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>-->
+    </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="portfolio">
+        <a href="#"><img src="./resources/Index/ShadOblivion Logo.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+        <div class="w3-container">
+            <h1><b>My Portfolio</b></h1>
+            <!-- FILTERS -->
+            <!--
+            <div class="w3-section w3-bottombar w3-padding-16">
+                <span class="w3-margin-right">Filter:</span>
+                <button class="w3-button w3-black">ALL</button>
+                <button class="w3-button w3-white"><i class="fa fa-graduation-cap w3-margin-right"></i>School Projects</button>
+                <button class="w3-button w3-white w3-hide-small"><i class="fa fa-id-badge w3-margin-right"></i>Personal Projects</button>
+                <button class="w3-button w3-white w3-hide-small"><i class="fa fa-gamepad w3-margin-right"></i>Video Games</button>
+                <button class="w3-button w3-white w3-hide-small"><i class="fa fa-paint-brush w3-margin-right"></i>Art</button>
+            </div>
+            -->
+        </div>
+    </header>
+
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+            <a href="./pages/topshopper.html">
+                <img src="./resources/Index/topshopper.png" alt="Top Shopper" style="width:100%" class="w3-hover-opacity">
+            </a>
+            <div class="w3-container w3-white" style="padding-bottom: 10px;">
+                <p><b>Top Shopper</b></p>
+                <p>An arena multiplayer driving game made from scratch for CPSC 585 - Games Programming. Made with a team
+                of four other students. I was the Lead Designer and Art Director for this project.</p>
+            </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <a href="./pages/movesets.html">
+                <img src="./resources/Index/Smash.png" alt="Super Smash Bros. Movesets" style="width:100%" class="w3-hover-opacity">
+            </a>
+            <div class="w3-container w3-white" style="padding-bottom: 10px;">
+                <p><b>Super Smash Bros. Moveset Collection</b> <!-- <span class="w3-tag">NEW</span> --></p>
+                <p>A collection of character movesets created over the years in my free time for the Super Smash Bros.
+                series of video games. Includes descriptions and insights on my designs for each character.</p>
+            </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <a href="./pages/revivelive.html">
+                <img src="./resources/Index/revivelive.png" alt="Danganronpa Revive LIVE" style="width:100%" class="w3-hover-opacity">
+            </a>
+            <div class="w3-container w3-white" style="padding-bottom: 10px;">
+                <p><b>Danganronpa: Revive LIVE</b></p>
+                <p>A Danganronpa fan-game currently in the early stages of development. The project is directed by me and
+                will be made with Unity engine and available for FREE on itch.io once completed.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+            <a href="https://tf2maps.net/downloads/drainage.10994/">
+                <img src="./resources/Index/Drainage.jpg" alt="drainage thumbnail" style="width:100%" class="w3-hover-opacity">
+            </a>
+            <div class="w3-container w3-white" style="padding-bottom: 10px;">
+                <p><b>koth_drainage</b></p>
+                <p>A King of the Hill map for Team Fortress 2. Based on a water treatment plant. My first ever Team
+                    Fortress 2 map!</p>
+                <button onclick="window.location='./pages/drainage.html'" class="w3-button w3-black">Dev Blog</button>
+            </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <a href="./pages/581projects.html">
+                <img src="./resources/Index/CPSC 581 Projects.png" alt="581 Logo" style="width:100%" class="w3-hover-opacity">
+            </a>
+            <div class="w3-container w3-white" style="padding-bottom: 10px;">
+                <p><b>CPSC 581 Project Collection</b></p>
+                <p>A collection of projects created for CPSC 581 - Human-Computer Interaction II. The original purpose
+                    of this website was to showcase these projects but it has since grown into a full showcase for all of
+                    my past, present, and future projects.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <!--<div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+            <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+        </div>
+    </div>-->
+
+    <!-- Images of Me -->
+    <div class="w3-row-padding w3-padding-16" id="about">
+        <div class="w3-col m6">
+            <img src="./resources/Index/ShadOblivion Logo.png" alt="Me" style="width:60%">
+        </div>
+    </div>
+
+    <!-- About me -->
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+        <h4><b>About Me</b></h4>
+        <p>I'm a graduate from the University of Calgary with a Bachelor of Science in Computer Science with a
+            concentration in computer game design. I'm drawn to all sorts of activities and projects, but I thrive in
+            environments where I can stretch my imaginative muscles and design something fun. Be it levels, weapons,
+            or mechanics, this is where I'm most in my element.
+        </p>
+        <p>Online, I am known under my alias ShadOblivion. On my Instagram account, I post my own art relating to the video
+            games I am interested in. On Youtube, I am part of a channel called SoiBois, where me and my friends play
+            video games and commentate. I have also made myself known in a few internet communities, including TF2Maps,
+            where I have been creating and prototyping maps for the online multiplayer game Team Fortress 2.
+        </p>
+
+        <!--
+        <hr>
+        <p>
+            <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+                <i class="fa fa-download w3-margin-right"></i>Download Resume
+            </button>
+        </p>
+        <hr>
+        -->
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-padding-large w3-grey">
+        <h4 id="contact"><b>Contact Me</b></h4>
+        <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+            <div class="w3-third w3-dark-grey">
+                <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+                <p>EverestWild@gmail.com</p>
+            </div>
+            <div class="w3-third w3-deep-purple">
+                <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+                <p>Calgary, Alberta, CA</p>
+            </div>
+            <div class="w3-third w3-dark-grey">
+                <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+                <p>403-998-7643</p>
+            </div>
+            <div class="w3-third w3-deep-purple w3-hover-opacity" onclick="window.location='https://www.linkedin.com/in/everest-wild/'">
+                <p><i class="fa fa-linkedin w3-xxlarge w3-text-light-grey"></i></p>
+                <p>Everest Wild</p>
+            </div>
+            <div class="w3-third w3-dark-grey w3-hover-opacity" onclick="window.location='https://www.instagram.com/shadoblivion/'">
+                <p><i class="fa fa-instagram w3-xxlarge w3-text-light-grey"></i></p>
+                <p>ShadOblivion</p>
+            </div>
+            <div class="w3-third w3-deep-purple w3-hover-opacity" onclick="window.location='https://www.youtube.com/channel/UCKuNmyCWcW5YIt2N17e2W_Q'">
+                <p><i class="fa fa-youtube w3-xxlarge w3-text-light-grey"></i></p>
+                <p>SoiBois</p>
+            </div>
+            <!--
+            <div class="w3-third w3-dark-grey w3-hover-opacity" onclick="window.location='https://www.reddit.com/user/ShadOblivion_'">
+                <p><i class="fa fa-reddit-alien w3-xxlarge w3-text-light-grey"></i></p>
+                <p>ShadOblivion_</p>
+            </div>
+            <div class="w3-third w3-deep-purple w3-hover-opacity" onclick="window.location='https://shadoblivion.itch.io/'">
+                <p><i class="fa fa-gamepad w3-xxlarge w3-text-light-grey"></i></p>
+                <p>shadoblivion.itch.io</p>
+            </div>
+            -->
+        </div>
+        <!--
+        <hr class="w3-opacity">
+        <form action="/action_page.php" target="_blank">
+            <div class="w3-section">
+                <label>Name</label>
+                <input class="w3-input w3-border" type="text" name="Name" required>
+            </div>
+            <div class="w3-section">
+                <label>Email</label>
+                <input class="w3-input w3-border" type="text" name="Email" required>
+            </div>
+            <div class="w3-section">
+                <label>Message</label>
+                <input class="w3-input w3-border" type="text" name="Message" required>
+            </div>
+            <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+        </form>
+        -->
+    </div>
+
+    <!-- Footer -->
+    <!--
+    <footer class="w3-container w3-padding-32 w3-dark-grey">
+        <div class="w3-row-padding">
+            <div class="w3-third">
+                <h3>HELLO THERE</h3>
+                <p>What are you doing down here? Scroll back up and check out my website!</p>
+            </div>
+        </div>
+    </footer>
+    -->
+
+    <div class="w3-black w3-center w3-padding-24">Website created by Everest Wild with help from
+        <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+    <!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<!-- Load Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./dist/js/bootstrap.bundle.min.js"></script>
+<script src="./scripts/index.js"></script>
+</body>
+</html>
