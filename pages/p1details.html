@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<title>Scream Scorer Details</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-gray w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-black w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container">
+        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <img src="../resources/Index/Me.png" style="width:45%;" class="w3-round"><br><br>
+        <h4><b>Everest Wild</b></h4>
+        <p class="w3-text-gray">Also known as ShadOblivion</p>
+    </div>
+    <div class="w3-bar-block">
+        <a href="../pages/581projects.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-mail-reply fa-fw w3-margin-right"></i>RETURN TO PROJECTS
+        </a>
+        <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-mail-reply fa-fw w3-margin-right"></i>RETURN TO MAIN PAGE
+        </a>
+        <a href="#ideation" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-lightbulb-o fa-fw w3-margin-right"></i>IDEATION
+        </a>
+        <a href="#randi" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-star fa-fw w3-margin-right"></i>RESULTS AND INSTRUCTIONS
+        </a>
+        <a href="#sketches" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-pencil fa-fw w3-margin-right"></i>SKETCHES
+        </a>
+        <a href="#demo" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="	fa fa-video-camera fa-fw w3-margin-right"></i>VIDEO DEMO
+        </a>
+    </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="portfolio">
+        <a href="#"><img src="../resources/Index/ShadOblivion Logo.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+        <div class="w3-container">
+            <h1><b>Hide and Seek</b></h1>
+        </div>
+    </header>
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+        <h2 id="ideation"><b>Ideation</b></h2>
+        <p>When originally given the prompt of an application that takes sound as an input, my immediate reaction was to
+            create some sort of game that uses screaming as an input. Even though screaming isn’t inherently something
+            that brings delight, it can be made into something fun and delightful for the users!
+        </p>
+        <img src="../resources/P1D/Scream Charger.png" alt="Scream Charger Sketch" style="width:60%">
+        <p>My original idea was for a game that takes in the user’s scream as an input and then plays an animation that
+            dynamically changes based on the length and volume of their scream. As I continued to ideate, I realized
+            that this could be turned into something competitive that includes multiple players.
+        </p>
+        <img src="../resources/P1D/Scream Fight IRL.png" alt="Scream Fight IRL Sketch" style="width:60%">
+        <img src="../resources/P1D/Scream Fight.png" alt="Scream Fight Sketch" style="width:60%">
+        <p>
+            This idea took my original idea, but added a competitive twist to it, making it a game between two friends
+            to see who could scream better than the other! The idea seemed like something fun that me and my friends
+            would try out. However, as I started planning the implementation, I quickly realized that it would be
+            incredibly difficult to program a method to isolate the two screams and have them only affect the character
+            they are supposed to be in control of, so a new method would need to be devised.
+        </p>
+        <img src="../resources/P1D/Scream Fight Turn-Based.png" alt="Scream Fight Turn-Based Sketch" style="width:60%">
+        <p>
+            This was the natural continuation of my scream fight idea, instead having the two users record their screams
+            individually, they would record them one after another and then the application would put them against each
+            other. I continued with this idea, but quickly realized that the scream visualization would require good
+            artwork with advanced dynamic animations, something that I don’t have the skill to complete, so a different
+            scream visualization would be needed.
+        </p>
+        <img src="../resources/P1D/Scream Competition.png" alt="Scream Competition Sketch" style="width:60%">
+        <p>
+            This was basically the same premise as the turn-based scream fight, however it would simply use bars as
+            visualization for the users’ screams. Once reaching this point in the ideation, I realized that my idea had
+            almost entirely come back to my original idea! With that original idea in mind, I realized that instead of
+            making a competitive app between two players, I could make something that is competitive between any number
+            of players.
+        </p>
+        <img src="../resources/P1D/Scream Visualizer.png" alt="Scream Visualizer Sketch" style="width:60%">
+        <p>
+            This application is much simpler of an idea than the earlier ones, but it carries the same sort of idea of a
+            competitive screaming app. However it simply has users scream, and then the app gives the scream a score,
+            along with a fancy visualization of their scream. The competitive aspect comes with the fact that all users
+            can compare their scores between each other and figure out a winner that way. At this point, I was pretty
+            finalized with my idea, however the dynamic bar visualizer proved to be a little too much for me to handle,
+            so I had to simplify the visualizer aspect.
+        </p>
+        <img src="../resources/P1D/Scream Scorer.png" alt="Scream Scorer Sketch" style="width:60%">
+        <p>
+            This is essentially the final idea I ended up going with and implementing. The idea is that the app would
+            take in a scream, give it a score, and then hold onto that score if it was a high score. That way, a user
+            could set a high score, and then their friends could compete to try and beat it.
+        </p>
+        <img src="../resources/P1D/P1 Screenshot.png" alt="P1 Screenshot" style="width:60%">
+
+        <h2 id="randi" style="padding-top: 32px;"><b>Results and Instructions</b></h2>
+        <p>
+            This is the final product! Once it starts, it will take in screams and score them. The circle in the center
+            dynamically changes size and colour in relation to the volume of the input it takes in. The score of the
+            current scream, the score of the last scream, and the all-time high score are all stored in the corner and
+            can be reset at any time using the reset button below them. The website is designed with mobile devices in
+            mind, however it can be used on desktop as well, as shown in the screenshot above.
+        </p>
+        <p>
+            Overall, I think this project does bring delight, as I tested it with family members and friends and they
+            had a lot of fun trying it out and trying to beat each others’ high scores. I also did some slight research
+            into topics such as scream therapy and found out about the benefits of sometimes screaming your heart out,
+            which my app encourages.
+        </p>
+    </div>
+
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding">
+        <h2 id="sketches" style="padding-top: 32px;"><b>Sketches</b></h2>
+         <div class="w3-third w3-container w3-margin-bottom">
+             <img src="../resources/P1D/Scream Charger.png" alt="Scream Charger" style="width:100%">
+         </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P1D/Scream Fight.png" alt="Scream Fight" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P1D/Scream Fight IRL.png" alt="Scream Fight IRL" style="width:100%">
+        </div>
+     </div>
+    <!-- Second Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P1D/Scream Fight Turn-Based.png" alt="Scream Fight Turn-Based" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P1D/Scream Competition.png" alt="Scream Competition" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P1D/Scream Visualizer.png" alt="Scream Visualizer" style="width:100%">
+        </div>
+    </div>
+    <!-- Third Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P1D/Scream Scorer.png" alt="Scream Scorer" style="width:100%">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-dark-grey">
+        <div class="w3-row-padding">
+            <div class="w3-third">
+                <h3 id="demo">VIDEO DEMO</h3>
+                <p>Coming soon.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="w3-black w3-center w3-padding-24">Website created by Everest Wild with help from
+        <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+    <!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<!-- Load Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../dist/js/bootstrap.bundle.min.js"></script>
+<script src="../scripts/index.js"></script>
+</body>
+</html>
