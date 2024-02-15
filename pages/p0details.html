@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<title>Tea-Bagger Details</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-gray w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-black w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container">
+        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <img src="../resources/Index/Me.png" style="width:45%;" class="w3-round"><br><br>
+        <h4><b>Everest Wild</b></h4>
+        <p class="w3-text-gray">Also known as ShadOblivion</p>
+    </div>
+    <div class="w3-bar-block">
+        <a href="../pages/581projects.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-mail-reply fa-fw w3-margin-right"></i>RETURN TO PROJECTS
+        </a>
+        <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-mail-reply fa-fw w3-margin-right"></i>RETURN TO MAIN PAGE
+        </a>
+        <a href="#ideation" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-lightbulb-o fa-fw w3-margin-right"></i>IDEATION
+        </a>
+        <a href="#sketches" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-pencil fa-fw w3-margin-right"></i>SKETCHES
+        </a>
+        <a href="#demo" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="	fa fa-video-camera fa-fw w3-margin-right"></i>VIDEO DEMO
+        </a>
+    </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="portfolio">
+        <a href="#"><img src="../resources/Index/ShadOblivion Logo.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+        <div class="w3-container">
+            <h1><b>Hide and Seek</b></h1>
+        </div>
+    </header>
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+        <h2 id="ideation"><b>Ideation</b></h2>
+        <p>For my project, I interviewed my fellow classmate, Pierce de Jong. When I asked him about what brought him
+            delight, he told me that what brings him delight is his morning routine. He wakes up, gets showered, has
+            breakfast, and then he makes himself some tea as he watches the news. The interview quickly spiralled into a
+            focus on his tea making process, which is his favorite part of his morning routine. He explained to me about
+            how he loves making black tea for himself. Due to its taste, but also due to the process itself. He
+            explained to me about how the process is very specific and is easy to mess up, but the feeling of
+            accomplishment is immense when it’s pulled off correctly. For my project, I wanted to replicate this sense
+            of accomplishment when making tea in order to bring Pierce some delight.
+        </p>
+        <img src="../resources/P0D/p0 screenshot.jpg" alt="P0 Screenshot" style="width:60%">
+        <p>My project is “Tea-Bagger”. A website where the user can press the button to dip a tea bag into a cup of tea.
+            Holding the button down will keep the tea bag in the tea, and releasing it will bring it back out of the
+            to a resting position. I went through a lot of different ideas when trying to come up with a one-button
+            project that could encapsulate the delight that Pierce’s morning routine brought to him. This was the sketch
+            that I ended up selecting:
+        </p>
+        <img src="../resources/P0D/Tea-Bagger.png" alt="Tea-Bagger Sketch" style="width:60%">
+        <p>
+            It was simple, to the point, and achievable with my low level of knowledge and skill when it comes to
+            JavaScript and HTML. I went through a couple of different ideas, but I ended up going with a combination of
+            the idea above and this sketch below:
+        </p>
+        <img src="../resources/P0D/Animated Tea Bag.png" alt="Animated Tea Bag Sketch" style="width:60%">
+        <p>
+            This website is made to be used on a desktop or tablet in full screen. I fear that the effect may break if
+            it is used on a mobile device or on a resized window.
+        </p>
+    </div>
+
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding">
+        <h2 id="sketches" style="padding-top: 32px;"><b>Sketches</b></h2>
+        <h3>Initial Sketches</h3>
+         <div class="w3-third w3-container w3-margin-bottom">
+             <img src="../resources/P0D/Ultimate Tea Station.png" alt="Ultimate Tea Station" style="width:100%">
+         </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P0D/Ultimate Morning Routine Station.png" alt="Morning Routine Station" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P0D/TV Channels.png" alt="TV Channels" style="width:100%">
+        </div>
+     </div>
+    <!-- Second Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P0D/Tea Recipe Generator.png" alt="Tea Recipe Generator" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P0D/Tea-Bagger.png" alt="Tea-Bagger" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P0D/Tea Museum.png" alt="Tea Museum" style="width:100%">
+        </div>
+    </div>
+    <!-- Third Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P0D/Morning Button.png" alt="Morning Button" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P0D/8-Hour Alarm.png" alt="8-Hour Alarm" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P0D/Headline Generator.png" alt="Headline Generator" style="width:100%">
+        </div>
+    </div>
+    <!-- Fourth Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P0D/Morning Checklist.png" alt="Morning Checklist" style="width:100%">
+        </div>
+    </div>
+
+    <!-- Fifth Photo Grid-->
+    <div class="w3-row-padding">
+        <h3 style="padding-top: 32px;">Focused Sketches</h3>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P0D/Tea-Dragger.png" alt="Tea-Dragger" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P0D/Tea Bag Mouse.png" alt="Tea Bag Mouse" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P0D/One-Button Tea Maker.png" alt="One-Button Tea Maker" style="width:100%">
+        </div>
+    </div>
+    <!-- Sixth Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P0D/Multi-Bagger.png" alt="Multi-Bagger" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P0D/Catch the Tea Bag.png" alt="Catch the Tea Bag" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P0D/Tea Bag Physics.png" alt="Tea Bag Physics" style="width:100%">
+        </div>
+    </div>
+    <!-- Seventh Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P0D/Tea-Bagger 3D.png" alt="Tea-Bagger 3D" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P0D/Tea Drinker.png" alt="Tea Drinker" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P0D/Scroll Tea-Bagger.png" alt="Scroll Tea-Bagger" style="width:100%">
+        </div>
+    </div>
+    <!-- Eighth Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P0D/Animated Tea Bag.png" alt="Animated Tea Bag" style="width:100%">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-dark-grey">
+        <div class="w3-row-padding">
+            <div class="w3-third">
+                <h3 id="demo">VIDEO DEMO</h3>
+                <p>Coming soon.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="w3-black w3-center w3-padding-24">Website created by Everest Wild with help from
+        <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+    <!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<!-- Load Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../dist/js/bootstrap.bundle.min.js"></script>
+<script src="../scripts/index.js"></script>
+</body>
+</html>

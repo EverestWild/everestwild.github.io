@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Describe this page." />
+    <title>Hide-and-Seek</title>
+    <style>
+        body {
+            background-color: darksalmon;
+        }
+        .parent{
+            text-align:center;
+        }
+        .centered {
+            margin: auto;
+        }
+        .top-centered {
+            position: fixed;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        .bot-centered {
+            position: fixed;
+            top: 98%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .button {
+            background: none;
+            border: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <img class="centered" src="../resources/P2/Hide and Seek Logo.png" width="50%">
+</div>
+<div class="parent">
+    <video class="centered" id="localVideo" autoplay muted style="width:40%;"></video>
+    <video class="centered" id="remoteVideo" autoplay style="width:40%;"></video>
+</div>
+<div class="parent">
+    <button class="centered" id="btn-client1">Connect as Baby</button>
+    <button class="centered" id="btn-client2">Connect as Adult</button>
+</div>
+
+<div class="parent">
+    <button class="centered" id="btn-call">Call</button>
+</div>
+<div class="parent" id="msgDiv"></div>
+<div class="parent">
+    <button class="centered" id="vibrate" disabled>VIBRATE</button>
+    <button class="centered" id="squeek" disabled>SQUEEK</button>
+    <button class="centered" id="strum" disabled>STRUM</button>
+    <button class="centered" id="ring" disabled>RING</button>
+    <button class="centered" id="shake" disabled>SHAKE</button>
+</div>
+
+</body>
+<footer></footer>
+
+<!-- Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../scripts/tut6.js"> </script>
+</html>

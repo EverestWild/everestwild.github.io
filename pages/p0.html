@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Project 0. Press the button to dip the tea bag in the tea!" />
+        <title>Tea-Bagger</title>
+        <style>
+            body {
+                background-image: url("../resources/kitchen.jpg")
+            }
+        </style>
+        <style>
+            .title {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .tea{
+                position: absolute;
+                top: 70%;
+                left: 35%;
+            }
+            .teabag{
+                position: absolute;
+                left: 47%;
+                top: 25%
+            }
+            .button{
+                font-size: 320px;
+                font-family: impact;
+                background-color: red;
+            }
+            .button:active{
+                color: red;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="../resources/Tea-Bagger Logo.png" width="397" height="211" class="title">
+        </div>
+        <div>
+            <img src="../resources/teaCupBack.png" class="tea">
+            <img id="bag" src="../resources/teabag.png" class="teabag" width="64" height="267">
+            <img src="../resources/teaCupFront.png" class="tea">
+        </div>
+        <button class="button" id="move_teabag" type="button">DIP</button>
+
+    </body>
+    <footer>
+    </footer>
+
+<!-- Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../scripts/p0.js"></script>
+</html>

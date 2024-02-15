@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<title>Hide and Seek Details</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-gray w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-black w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container">
+        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <img src="../resources/Index/Me.png" style="width:45%;" class="w3-round"><br><br>
+        <h4><b>Everest Wild</b></h4>
+        <p class="w3-text-gray">Also known as ShadOblivion</p>
+    </div>
+    <div class="w3-bar-block">
+        <a href="../pages/581projects.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-mail-reply fa-fw w3-margin-right"></i>RETURN TO PROJECTS
+        </a>
+        <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-mail-reply fa-fw w3-margin-right"></i>RETURN TO MAIN PAGE
+        </a>
+        <a href="#ideation" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-lightbulb-o fa-fw w3-margin-right"></i>IDEATION
+        </a>
+        <a href="#randi" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-star fa-fw w3-margin-right"></i>RESULTS AND INSTRUCTIONS
+        </a>
+        <a href="#sketches" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-pencil fa-fw w3-margin-right"></i>SKETCHES
+        </a>
+        <a href="#demo" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="	fa fa-video-camera fa-fw w3-margin-right"></i>VIDEO DEMO
+        </a>
+    </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="portfolio">
+        <a href="#"><img src="../resources/Index/ShadOblivion Logo.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+        <div class="w3-container">
+            <h1><b>Hide and Seek</b></h1>
+        </div>
+    </header>
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+        <h2 id="ideation"><b>Ideation</b></h2>
+        <p>For this project, the prompt was to create a website for a baby to video call with his grandparents that
+            included interaction elements for both of them. I knew I wanted to do something that would be fun for both
+            the baby and the grandparents. My original idea was to create an application where the grandparents could
+            build structures that overlap their video, and then Rhys can knock them over by shaking or touching the
+            screen. I got this idea after hearing that Rhys apparently likes knocking blocks over.
+        </p>
+        <img src="../resources/P2D/Build and Break.png" alt="Build and Break Sketch" style="width:60%">
+        <p>I really liked this idea, however, I realized that the scope might be too large when taking my personal
+            HTML/JavaScript knowledge into account. So I decided to look over some of my other drawings and see if any
+            truly piqued my interest.
+        </p>
+        <img src="../resources/P2D/Hide and Seek.png" alt="Hide and Seek Sketch" style="width:60%">
+        <p>
+            I went back to a Hide and Seek Idea that I drew and felt that it striked the perfect balance between
+            grandparent and baby usability, plus, it lets the baby move around and lets the application exist from
+            outside the tablet. The original idea was for the grandparents to simply make noise on their side and it
+            would hopefully draw the baby towards them. However I had another idea that I had drawn that could be
+            combined with the hide and seek idea to make the application even more interactive.
+        </p>
+        <img src="../resources/P2D/Noise-Maker.png" alt="Noise-Maker Sketch" style="width:60%">
+        <p>
+            If I combined the noise-maker idea with the hide and seek idea, then the grandparents could make noise from
+            the application itself along with their own noise on their end in order to draw Rhys’ attention. I started
+            sketching some more in-depth hide-and-seek sketches to get some ideas on how to set up the system. I drew a
+            lot of ideas, some a little too ambitious for my current HTML/JavaScript skills. I tried to include as many
+            of the ideas as possible, but in the end, I was only really able to fully implement a semi-remote system.
+        </p>
+        <img src="../resources/P2D/Screenshot.png" alt="Screenshot" style="width:60%">
+
+        <h2 id="randi" style="padding-top: 32px;"><b>Results and Instructions</b></h2>
+        <p>
+            Here is the final result! One user connects as a Baby (ideally on a phone, but a tablet can work as well)
+            and the other connects as an Adult (on any device). The mom of the baby then hides the device somewhere
+            within the room that’s easy for the baby to access. The baby then has to find the device, the grandparents
+            can make noise on their end or press the noise buttons to draw the baby’s attention. There are four noise
+            buttons, all custom made to Rhys’ tastes, and a fifth button that vibrates the hidden device if it’s a cell
+            phone.
+        </p>
+        <p>
+            Ideally, the mom might want to set up a third party video call so that the grandparents can watch the baby
+            search for the device, since the hidden device will probably not have the best view in the world. In the
+            future I would like to fix this issue by incorporating a three-screen system, as imagined by this sketch:
+        </p>
+        <img src="../resources/P2D/3-Screen Hide and Seek.png" alt="3-Screen Sketch" style="width:60%">
+    </div>
+
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding">
+        <h2 id="sketches" style="padding-top: 32px;"><b>Sketches</b></h2>
+        <h3>Initial Sketches</h3>
+         <div class="w3-third w3-container w3-margin-bottom">
+             <img src="../resources/P2D/Build and Break.png" alt="Build and Break" style="width:100%">
+         </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P2D/Monster Baby.png" alt="Monster Baby" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P2D/Peek-a-Boo Cam.png" alt="Peek-a-Boo Cam" style="width:100%">
+        </div>
+     </div>
+    <!-- Second Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P2D/Baby Karaoke.png" alt="Baby Karaoke" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P2D/Hide and Seek.png" alt="Hide and Seek" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P2D/Funny Facecam.png" alt="Funny Facecam" style="width:100%">
+        </div>
+    </div>
+    <!-- Third Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P2D/Crazy Camera.png" alt="Crazy Camera" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P2D/Camera Drawer.png" alt="Camera Drawer" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P2D/Story Time.png" alt="Story Time" style="width:100%">
+        </div>
+    </div>
+    <!-- Fourth Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P2D/Noise-Maker.png" alt="Noise-Maker" style="width:100%">
+        </div>
+    </div>
+
+    <!-- Fifth Photo Grid-->
+    <div class="w3-row-padding">
+        <h3 style="padding-top: 32px;">Focused Sketches</h3>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P2D/Remote Device.png" alt="Remote Device" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P2D/On-Screen Hide and Seek.png" alt="On-Screen Hide and Seek" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P2D/AR Hide and Seek.png" alt="AR Hide and Seek" style="width:100%">
+        </div>
+    </div>
+    <!-- Sixth Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P2D/3-Screen Hide and Seek.png" alt="3-Screen Hide and Seek" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P2D/Multiple Devices.png" alt="Multiple Devices" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P2D/Reverse Hide and Seek.png" alt="Reverse Hide and Seek" style="width:100%">
+        </div>
+    </div>
+    <!-- Seventh Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P2D/Timer Hide and Seek.png" alt="Timer Hide and Seek" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P2D/Turn-Based Hide and Seek.png" alt="Turn-Based Hide and Seek" style="width:100%">
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P2D/Speaker System.png" alt="Speaker System" style="width:100%">
+        </div>
+    </div>
+    <!-- Eighth Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/P2D/Puzzle Device.png" alt="Puzzle Device" style="width:100%">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-dark-grey">
+        <div class="w3-row-padding">
+            <div class="w3-third">
+                <h3 id="demo">VIDEO DEMO</h3>
+                <p>Coming soon.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="w3-black w3-center w3-padding-24">Website created by Everest Wild with help from
+        <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+    <!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<!-- Load Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../dist/js/bootstrap.bundle.min.js"></script>
+<script src="../scripts/index.js"></script>
+</body>
+</html>
