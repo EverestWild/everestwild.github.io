@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<title>X8</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-2020-brilliant-white w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-2020-navy-blazer w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container">
+        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <img src="../resources/Index/Me.png" style="width:45%;" class="w3-round"><br><br>
+        <h4><b>Everest Wild</b></h4>
+        <p class="w3-text-gray">Also known as ShadOblivion</p>
+    </div>
+    <div class="w3-bar-block">
+        <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-mail-reply fa-fw w3-margin-right"></i>RETURN TO MAIN PAGE
+        </a>
+    </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header class="w3-padding-32 w3-2020-navy-blazer">
+        <a href="../index.html"><img src="../resources/Index/ShadOblivion Logo.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+        <div class="w3-container w3-center">
+            <img src="../resources/x8/x8logo.png" style="width:15%;">
+        </div>
+    </header>
+
+    <div class="w3-container w3-padding-large">
+        <div style="position:relative;padding-top:56.25%;">
+            <iframe src="https://www.youtube.com/embed/cG3rFQFnkBs?si=Obd7g-kH6z4oMcLT" frameborder="0" allowfullscreen
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+        </div>
+    </div>
+
+    <div class="w3-container w3-2020-navy-blazer" style="margin:30px">
+        <p>
+            X8 is a VR tactical shooter designed for the Meta Quest and is also playable on Steam. X8 combines tactical
+            gun-play with flashy abilities for a gameplay experience similar to Counter Strike or Valorant. The virtual
+            reality element adds a lot to the gameplay by adding unique experiences only possible through the medium,
+            such as needing to physically hold your gun and reload it.
+        </p>
+        <p>
+            Being a UI Designer for a VR project was a very interesting experience. It differs from a standard game since
+            the UI needs to exist in a physical space relative to the perspective of the player. When implementing UI
+            into the game, I needed to keep in mind the view of the player and make sure no element gets in the way of
+            main gameplay. Additionally, the interactable elements needed to be simple and intuitive to fit with the
+            game's 'point-and-click' interact-style.
+        </p>
+        <p>
+            As a UI Designer/Engineer, I worked on many of the game's assets. Some stayed exactly as I implemented them,
+            and some were given additional functionality or a visual update from the art team. The assets I helped
+            design and implement include:
+        </p>
+        <ul>
+            <li>
+                Main menu, including the main gameplay selection screen and the party menu.
+            </li>
+            <li>
+                Character selection screen
+            </li>
+            <li>
+                In-game scoreboard and the end-of-game results screen
+            </li>
+            <li>
+                In-game popups such as the ammo counter, round timer, kill feed popup, and buy phase purchase popup
+            </li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-2019-bluestone">
+        <div class="w3-row-padding">
+            <div class="w3-third">
+                <h3 id="gallery">PHOTO GALLERY</h3>
+                <p>Coming soon</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="w3-2020-navy-blazer w3-center w3-padding-24">Website created by Everest Wild with help from
+        <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<!-- Load Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../dist/js/bootstrap.bundle.min.js"></script>
+<script src="../scripts/index.js"></script>
+</body>
+</html>

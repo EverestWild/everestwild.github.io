@@ -28,10 +28,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     </div>
     <div class="w3-panel w3-large">
         <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>-->
-        <i onclick="window.location='https://www.linkedin.com/in/everest-wild/'" class="fa fa-linkedin w3-hover-opacity"></i>
-        <i onclick="window.location='https://github.com/EverestWild'" class="fa fa-github w3-hover-opacity"></i>
-        <i onclick="window.location='https://www.instagram.com/shadoblivion/'" class="fa fa-instagram w3-hover-opacity"></i>
-        <i onclick="window.location='https://www.youtube.com/channel/UCKuNmyCWcW5YIt2N17e2W_Q'" class="fa fa-youtube w3-hover-opacity"></i>
+        <i onclick="window.open('https://www.linkedin.com/in/everest-wild/')" class="fa fa-linkedin w3-hover-opacity"></i>
+        <i onclick="window.open('https://github.com/EverestWild')" class="fa fa-github w3-hover-opacity"></i>
+        <i onclick="window.open('https://www.instagram.com/shadoblivion/')" class="fa fa-instagram w3-hover-opacity"></i>
+        <i onclick="window.open('https://www.youtube.com/channel/UCKuNmyCWcW5YIt2N17e2W_Q')" class="fa fa-youtube w3-hover-opacity"></i>
         <!--<i class="fa fa-snapchat w3-hover-opacity"></i>
         <i class="fa fa-pinterest-p w3-hover-opacity"></i>
         <i class="fa fa-twitter w3-hover-opacity"></i>-->
@@ -46,10 +46,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
     <!-- Header -->
     <header id="portfolio">
-        <a href="#"><img src="./resources/Index/ShadOblivion Logo.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+        <a><img src="./resources/Index/ShadOblivion Logo.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
         <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
         <div class="w3-container">
-            <h1><b>My Portfolio</b></h1>
+            <h1><u><b>My Portfolio</b></u></h1>
             <!-- FILTERS -->
             <!--
             <div class="w3-section w3-bottombar w3-padding-16">
@@ -67,6 +67,23 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <!-- First Photo Grid-->
     <div class="w3-row-padding">
         <div class="w3-third w3-container w3-margin-bottom">
+            <a href="./pages/x8.html">
+                <img src="./resources/Index/x8.png" alt="X8" style="width:100%" class="w3-hover-opacity">
+            </a>
+            <div class="w3-container w3-white" style="padding-bottom: 10px;">
+                <p><b>X8</b></p>
+                <p>A VR Shooter for the Meta Quest and Steam. I spent six months on this project as a
+                    <b>UI Designer/Engineer</b>!</p>
+                <a onclick="window.open('https://store.steampowered.com/app/1763510/X8/')"
+                        class="w3-button w3-black">Steam</a>
+                <a onclick="window.open('https://www.meta.com/experiences/4518172508241377/')"
+                        class="w3-button w3-black">Meta</a>
+                <a onclick="window.open('https://playx8vr.com/en/')"
+                   class="w3-button w3-black">Website</a>
+            </div>
+        </div>
+
+        <div class="w3-third w3-container w3-margin-bottom">
             <a href="./pages/topshopper.html">
                 <img src="./resources/Index/topshopper.png" alt="Top Shopper" style="width:100%" class="w3-hover-opacity">
             </a>
@@ -76,6 +93,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 of four other students. I was the Lead Designer and Art Director for this project.</p>
             </div>
         </div>
+
         <div class="w3-third w3-container w3-margin-bottom">
             <a href="./pages/movesets.html">
                 <img src="./resources/Index/Smash.png" alt="Super Smash Bros. Movesets" style="width:100%" class="w3-hover-opacity">
@@ -86,6 +104,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 series of video games. Includes descriptions and insights on my designs for each character.</p>
             </div>
         </div>
+    </div>
+
+    <!-- Second Photo Grid-->
+    <div class="w3-row-padding">
         <div class="w3-third w3-container w3-margin-bottom">
             <a href="./pages/drainage.html">
                 <img src="./resources/Index/Drainage.jpg" alt="drainage thumbnail" style="width:100%" class="w3-hover-opacity">
@@ -94,13 +116,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 <p><b>koth_drainage</b></p>
                 <p>A King of the Hill map for Team Fortress 2. Based on a water treatment plant. My first ever Team
                     Fortress 2 map!</p>
-                <button onclick="window.location='https://tf2maps.net/downloads/drainage.10994/'" class="w3-button w3-black">TF2Maps Page</button>
+                <a onclick="window.open('https://tf2maps.net/downloads/drainage.10994/')" class="w3-button w3-black">TF2Maps Page</a>
             </div>
         </div>
-    </div>
 
-    <!-- Second Photo Grid-->
-    <div class="w3-row-padding">
         <div class="w3-third w3-container w3-margin-bottom">
             <a href="./pages/revivelive.html">
                 <img src="./resources/Index/revivelive.png" alt="Danganronpa Revive LIVE" style="width:100%" class="w3-hover-opacity">
@@ -111,6 +130,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                     will be made with Unity engine and available for FREE on itch.io once completed.</p>
             </div>
         </div>
+
         <div class="w3-third w3-container w3-margin-bottom">
             <a href="./pages/581projects.html">
                 <img src="./resources/Index/CPSC 581 Projects.png" alt="581 Logo" style="width:100%" class="w3-hover-opacity">
@@ -179,19 +199,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
                 <p>Calgary, Alberta, CA</p>
             </div>
-            <div class="w3-third w3-dark-grey w3-hover-opacity" onclick="window.location='https://www.linkedin.com/in/everest-wild/'">
+            <div class="w3-third w3-dark-grey w3-hover-opacity" onclick="window.open('https://www.linkedin.com/in/everest-wild/')">
                 <p><i class="fa fa-linkedin w3-xxlarge w3-text-light-grey"></i></p>
                 <p>Everest Wild</p>
             </div>
-            <div class="w3-third w3-deep-purple w3-hover-opacity" onclick="window.location='https://github.com/EverestWild'">
+            <div class="w3-third w3-deep-purple w3-hover-opacity" onclick="window.open('https://github.com/EverestWild')">
                 <p><i class="fa fa-github w3-xxlarge w3-text-light-grey"></i></p>
                 <p>EverestWild</p>
             </div>
-            <div class="w3-third w3-dark-grey w3-hover-opacity" onclick="window.location='https://www.instagram.com/shadoblivion/'">
+            <div class="w3-third w3-dark-grey w3-hover-opacity" onclick="window.open('https://www.instagram.com/shadoblivion/')">
                 <p><i class="fa fa-instagram w3-xxlarge w3-text-light-grey"></i></p>
                 <p>ShadOblivion</p>
             </div>
-            <div class="w3-third w3-deep-purple w3-hover-opacity" onclick="window.location='https://www.youtube.com/channel/UCKuNmyCWcW5YIt2N17e2W_Q'">
+            <div class="w3-third w3-deep-purple w3-hover-opacity" onclick="window.open('https://www.youtube.com/channel/UCKuNmyCWcW5YIt2N17e2W_Q')">
                 <p><i class="fa fa-youtube w3-xxlarge w3-text-light-grey"></i></p>
                 <p>SoiBois</p>
             </div>
