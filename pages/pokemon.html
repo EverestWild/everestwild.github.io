@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<title>Pokemon: Ancient Past & Bright Future</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-content" style="max-width:1600px;background-color:#DBDBDB;">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-animate-left" style="z-index:3;width:300px;background-color:#7F6534" id="mySidebar"><br>
+    <div class="w3-container">
+        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <img src="../resources/Index/Me.png" style="width:45%;" class="w3-round"><br><br>
+        <h4><b>Everest Wild</b></h4>
+        <p style="color:#DBDBDB">Also known as ShadOblivion</p>
+    </div>
+    <div class="w3-bar-block">
+        <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-mail-reply fa-fw w3-margin-right"></i>RETURN TO MAIN PAGE
+        </a>
+        <a href="#over" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-book fa-fw w3-margin-right"></i>OVERVIEW
+        </a>
+        <a href="#poke" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-address-book fa-fw w3-margin-right"></i>POKEDEX
+        </a>
+    </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header style="background-color:#7F6534">
+        <a href="../index.html"><img src="../resources/Index/ShadOblivion Logo.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+        <div class="w3-container w3-center">
+            <img src="../resources/pokemon/PastLogo.png" style="width:15%; margin:30px">
+            <img src="../resources/pokemon/FutureLogo.png" style="width:15%; margin:30px">
+        </div>
+    </header>
+
+    <div class="w3-row-padding">
+        <div  class="w3-half">
+            <figure>
+                <img src="../resources/pokemon/PastLogo.png" alt="Pokemon Ancient Past Logo" style="width:100%">
+            </figure>
+        </div>
+        <div  class="w3-half">
+            <figure>
+                <img src="../resources/pokemon/FutureLogo.png" alt="Pokemon Bright Future Logo" style="width:100%">
+            </figure>
+        </div>
+    </div>
+
+    <!-- Overview -->
+    <div class="w3-row-padding" style="margin:30px;background-color:#7F6534">
+        <h2 id="over"><b><u>Overview</u></b></h2>
+        <p>
+            Pokemon: Ancient Past and Bright Future is a Pokemon design prompt created by me as a challenge to create a
+            wholly original Pokemon game that takes place in a region based on Canada. The final concept ended up being
+            the 'Anata Region'. I decided on a theme of the past vs the future, or progress vs tradition (before Pokemon:
+            Scarlet and Violet tackled very similar themes). I had many aspects planned out, such as characters, gym leaders,
+            towns, story beats, mechanics, and most importantly, the Pokemon. I wanted to create a region of wholly new
+            and original Pokemon ideas. This is a project I tend to come back to often after taking breaks to work on other
+            things. One day I hope to make it into a fully-fledged Pokemon fan game.
+        </p>
+    </div>
+
+    <p style="text-align:center">
+        <img src="../resources/pokemon/RegionLogo.png" alt="Anata Region Logo" style="width:60%;">
+    </p>
+
+    <!-- Pokedex -->
+    <div class="w3-row-padding" style="margin:30px;background-color:#7F6534;">
+        <h2 id="poke"><b><u>Pokedex</u></b></h2>
+
+        <!-- First Photo Grid-->
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/pokemon/pokedex/001alfalpha.png" alt="Alfalpha" style="width:100%">
+            <div class="w3-row-padding" style="background-color:#DBDBDB;">
+                <div class="w3-half">
+                    <img src="../resources/pokemon/types/grass.png" style="margin:5px;width:100%;">
+                </div>
+                <div class="w3-half">
+                    <img src="../resources/pokemon/types/blank.png" style="margin:5px;width:100%;">
+                </div>
+            </div>
+            <div class="w3-container" style="padding-bottom: 10px;background-color:#DBDBDB;">
+                <p><b>#001</b> - Alfalpha</p>
+                <p>The lone wolf Pokemon</p>
+            </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/pokemon/pokedex/004flamburn.png" alt="Flamburn" style="width:100%">
+            <div class="w3-row-padding" style="background-color:#DBDBDB;">
+                <div class="w3-half">
+                    <img src="../resources/pokemon/types/fire.png" style="margin:5px;width:100%;">
+                </div>
+                <div class="w3-half">
+                    <img src="../resources/pokemon/types/blank.png" style="margin:5px;width:100%;">
+                </div>
+            </div>
+            <div class="w3-container" style="padding-bottom: 10px;background-color:#DBDBDB;">
+                <p><b>#004</b> - Flamburn</p>
+                <p>The lamb Pokemon</p>
+            </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/pokemon/pokedex/007lazloon.png" alt="Lazloon" style="width:100%">
+            <div class="w3-row-padding" style="background-color:#DBDBDB;">
+                <div class="w3-half">
+                    <img src="../resources/pokemon/types/water.png" style="margin:5px;width:100%;">
+                </div>
+                <div class="w3-half">
+                    <img src="../resources/pokemon/types/blank.png" style="margin:5px;width:100%;">
+                </div>
+            </div>
+            <div class="w3-container" style="padding-bottom: 10px;background-color:#DBDBDB;">
+                <p><b>#007</b> - Lazloon</p>
+                <p>The loon Pokemon</p>
+            </div>
+        </div>
+
+        <!-- Second Photo Grid-->
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/pokemon/pokedex/012larveller.png" alt="Larveller" style="width:100%">
+            <div class="w3-row-padding" style="background-color:#DBDBDB;">
+                <div class="w3-half">
+                    <img src="../resources/pokemon/types/bug.png" style="margin:5px;width:100%;">
+                </div>
+                <div class="w3-half">
+                    <img src="../resources/pokemon/types/blank.png" style="margin:5px;width:100%;">
+                </div>
+            </div>
+            <div class="w3-container" style="padding-bottom: 10px;background-color:#DBDBDB;">
+                <p><b>#012</b> - Larveller</p>
+                <p>The larva Pokemon</p>
+            </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/pokemon/pokedex/013sharpupa.png" alt="Sharpupa" style="width:100%">
+            <div class="w3-row-padding" style="background-color:#DBDBDB;">
+                <div class="w3-half">
+                    <img src="../resources/pokemon/types/bug.png" style="margin:5px;width:100%;">
+                </div>
+                <div class="w3-half">
+                    <img src="../resources/pokemon/types/steel.png" style="margin:5px;width:100%;">
+                </div>
+            </div>
+            <div class="w3-container" style="padding-bottom: 10px;background-color:#DBDBDB;">
+                <p><b>#013</b> - Sharpupa</p>
+                <p>The sharpener Pokemon</p>
+            </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/pokemon/pokedex/014lumbunyan.png" alt="Lumbunyan" style="width:100%">
+            <div class="w3-row-padding" style="background-color:#DBDBDB;">
+                <div class="w3-half">
+                    <img src="../resources/pokemon/types/bug.png" style="margin:5px;width:100%;">
+                </div>
+                <div class="w3-half">
+                    <img src="../resources/pokemon/types/steel.png" style="margin:5px;width:100%;">
+                </div>
+            </div>
+            <div class="w3-container" style="padding-bottom: 10px;background-color:#DBDBDB;">
+                <p><b>#014</b> - Lumbunyan</p>
+                <p>The axe limb Pokemon</p>
+            </div>
+        </div>
+
+        <!-- Third Photo Grid-->
+        <div class="w3-third w3-container w3-margin-bottom">
+            <img src="../resources/pokemon/pokedex/prystal.png" alt="Prystal" style="width:100%">
+            <div class="w3-row-padding" style="background-color:#DBDBDB;">
+                <div class="w3-half">
+                    <img src="../resources/pokemon/types/steel.png" style="margin:5px;width:100%;">
+                </div>
+                <div class="w3-half">
+                    <img src="../resources/pokemon/types/psychic.png" style="margin:5px;width:100%;">
+                </div>
+            </div>
+            <div class="w3-container" style="padding-bottom: 10px;background-color:#DBDBDB;">
+                <p><b>#???</b> - Prystal</p>
+                <p>The prism Pokemon</p>
+            </div>
+        </div>
+    </div>
+
+   <div class="w3-center w3-padding-24" style="background-color:#7F6534;">Website created by Everest Wild with help from
+        <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+    <!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<!-- Load Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../dist/js/bootstrap.bundle.min.js"></script>
+<script src="../scripts/index.js"></script>
+</body>
+</html>
