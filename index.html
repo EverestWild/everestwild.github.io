@@ -23,6 +23,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     </div>
     <div class="w3-bar-block">
         <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+        <a href="#development" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>IN DEVELOPMENT</a>
+        <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PERSONAL SHOWCASE</a>
         <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
         <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
     </div>
@@ -31,7 +33,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <i onclick="window.open('https://www.linkedin.com/in/everest-wild/')" class="fa fa-linkedin w3-hover-opacity"></i>
         <i onclick="window.open('https://github.com/EverestWild')" class="fa fa-github w3-hover-opacity"></i>
         <i onclick="window.open('https://www.instagram.com/shadoblivion/')" class="fa fa-instagram w3-hover-opacity"></i>
-        <i onclick="window.open('https://www.youtube.com/channel/UCKuNmyCWcW5YIt2N17e2W_Q')" class="fa fa-youtube w3-hover-opacity"></i>
+        <i onclick="window.open('https://www.youtube.com/@DaSoiBois')" class="fa fa-youtube-play w3-hover-opacity"></i>
+        <i onclick="window.open('https://www.twitch.tv/dasoibois')" class="fa fa-twitch w3-hover-opacity"></i>
         <!--<i class="fa fa-snapchat w3-hover-opacity"></i>
         <i class="fa fa-pinterest-p w3-hover-opacity"></i>
         <i class="fa fa-twitter w3-hover-opacity"></i>-->
@@ -44,12 +47,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px">
 
+    <!-- PORTFOLIO -->
     <!-- Header -->
     <header id="portfolio">
         <a><img src="./resources/Index/ShadOblivion Logo.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
         <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
         <div class="w3-container">
-            <h1><u><b>My Portfolio</b></u></h1>
+            <h1><u><b>Portfolio</b></u></h1>
             <!-- FILTERS -->
             <!--
             <div class="w3-section w3-bottombar w3-padding-16">
@@ -64,7 +68,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         </div>
     </header>
 
-    <!-- First Photo Grid-->
+    <!-- Portfolio Grid-->
     <div class="w3-row-padding">
         <div class="w3-third w3-container w3-margin-bottom">
             <a href="./pages/x8.html">
@@ -89,25 +93,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
             </a>
             <div class="w3-container w3-white" style="padding-bottom: 10px;">
                 <p><b>Top Shopper</b></p>
-                <p>An arena multiplayer driving game made from scratch for CPSC 585 - Games Programming. Made with a team
+                <p>An arena multiplayer driving game made in C++. Made with a team
                 of four other students. I was the Lead Designer and Art Director for this project.</p>
             </div>
         </div>
 
-        <div class="w3-third w3-container w3-margin-bottom">
-            <a href="./pages/movesets.html">
-                <img src="./resources/Index/Smash.png" alt="Super Smash Bros. Movesets" style="width:100%" class="w3-hover-opacity">
-            </a>
-            <div class="w3-container w3-white" style="padding-bottom: 10px;">
-                <p><b>Super Smash Bros. Moveset Collection</b> <!-- <span class="w3-tag">NEW</span> --></p>
-                <p>A collection of character movesets created over the years in my free time for the Super Smash Bros.
-                series of video games. Includes descriptions and insights on my designs for each character.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Second Photo Grid-->
-    <div class="w3-row-padding">
         <div class="w3-third w3-container w3-margin-bottom">
             <a href="./pages/drainage.html">
                 <img src="./resources/Index/Drainage.jpg" alt="drainage thumbnail" style="width:100%" class="w3-hover-opacity">
@@ -121,13 +111,81 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         </div>
 
         <div class="w3-third w3-container w3-margin-bottom">
+            <a>
+                <img src="./resources/Index/exhibition.png" alt="Exhibition" style="width:100%" class="w3-hover-opacity">
+            </a>
+            <div class="w3-container w3-white" style="padding-bottom: 10px;">
+                <p><b>The Exhibition</b> <span class="w3-tag">NEW</span></p>
+                <p>A Ren'Py visual novel made for the "Worst Visual Novel Ever" Challenge on Itch.io. Play at your own
+                risk! This game was purposely made to be terrible! Created by MADE Games. Full page coming soon!</p>
+                <a onclick="window.open('https://dimmledom.itch.io/the-exhibition')" class="w3-button w3-black">Game Link</a>
+                <a onclick="window.open('https://itch.io/jam/worstvn2024')" class="w3-button w3-black">Game Jam Page</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- DEVELOPMENT -->
+    <div class="w3-container" id="development">
+        <h1><u><b>In Development</b></u></h1>
+    </div>
+
+    <!-- Development Grid-->
+    <div class="w3-row-padding">
+
+        <div class="w3-third w3-container w3-margin-bottom">
+            <div class="w3-container w3-white" style="padding-bottom: 10px;">
+                <p><b>Liminal Game</b> <span class="w3-tag">NEW</span></p>
+                <p>A currently unnamed liminal horror game where you play as a thirsty hospital patient looking for a
+                glass of water in the middle of the night. Created by MADE Games.</p>
+            </div>
+        </div>
+
+        <div class="w3-third w3-container w3-margin-bottom">
+            <div class="w3-container w3-white" style="padding-bottom: 10px;">
+                <p><b>One-Pixel Horror</b> <span class="w3-tag">NEW</span></p>
+                <p>A multiplayer horror game where pixels explore a labyrinth and avoid a large monster. Created by
+                Copper Kettle Gameworks.</p>
+            </div>
+        </div>
+
+        <div class="w3-third w3-container w3-margin-bottom">
+            <div class="w3-container w3-white" style="padding-bottom: 10px;">
+                <p><b>Paradox Survivors</b> <span class="w3-tag">NEW</span></p>
+                <p>A Vampire Survivors-style game where you play as members of an agency trying to defend their planet
+                from a mysterious collective of aliens that spread their corruption like a virus.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SHOWCASE -->
+    <div class="w3-container" id="showcase">
+        <h1><u><b>Personal Showcase</b></u></h1>
+    </div>
+
+    <!-- Showcase Grid-->
+    <div class="w3-row-padding">
+
+        <div class="w3-third w3-container w3-margin-bottom">
+            <a href="./pages/movesets.html">
+                <img src="./resources/Index/Smash.png" alt="Super Smash Bros. Movesets" style="width:100%" class="w3-hover-opacity">
+            </a>
+            <div class="w3-container w3-white" style="padding-bottom: 10px;">
+                <p><b>Super Smash Bros. Moveset Collection</b> <!-- <span class="w3-tag">NEW</span> --></p>
+                <p>A collection of character movesets created over the years in my free time for the Super Smash Bros.
+                    series of video games. Includes descriptions and insights on my designs for each character.</p>
+            </div>
+        </div>
+
+        <div class="w3-third w3-container w3-margin-bottom">
             <a href="./pages/revivelive.html">
                 <img src="./resources/Index/revivelive.png" alt="Danganronpa Revive LIVE" style="width:100%" class="w3-hover-opacity">
             </a>
             <div class="w3-container w3-white" style="padding-bottom: 10px;">
                 <p><b>Danganronpa: Revive LIVE</b></p>
                 <p>A Danganronpa fan-game currently on hiatus. The project is directed by me and
-                    will be made with Unity engine and available for FREE on itch.io once completed.</p>
+                    will be made in the Unity engine and available for FREE on itch.io once completed.</p>
             </div>
         </div>
 
@@ -138,13 +196,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
             <div class="w3-container w3-white" style="padding-bottom: 10px;">
                 <p><b>Pokemon: Ancient Past & Bright Future</b></p>
                 <p>A Pokemon fan project created by me. It was mostly a design challenge I gave myself to create a
-                wholly original Pokemon region based on Canada. The project is currently on hiatus.</p>
+                    wholly original Pokemon region based on Canada. The project is currently on hiatus.</p>
             </div>
         </div>
-    </div>
 
-    <!-- Second Photo Grid-->
-    <div class="w3-row-padding">
         <div class="w3-third w3-container w3-margin-bottom">
             <a href="./pages/581projects.html">
                 <img src="./resources/Index/CPSC 581 Projects.png" alt="581 Logo" style="width:100%" class="w3-hover-opacity">
@@ -155,6 +210,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                     of this website was to showcase these projects but it has since grown into a full showcase.</p>
             </div>
         </div>
+
     </div>
 
     <!-- Pagination -->
@@ -229,14 +285,28 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                 <p><i class="fa fa-github w3-xxlarge w3-text-light-grey"></i></p>
                 <p>EverestWild</p>
             </div>
-            <div class="w3-third w3-dark-grey w3-hover-opacity" onclick="window.open('https://www.instagram.com/shadoblivion/')">
-                <p><i class="fa fa-instagram w3-xxlarge w3-text-light-grey"></i></p>
-                <p>ShadOblivion</p>
+            <div class="w3-third w3-dark-grey">
+                <div class="w3-half w3-hover-opacity" onclick="window.open('https://www.instagram.com/shadoblivion/')">
+                    <p><i class="fa fa-instagram w3-xxlarge w3-text-light-grey"></i></p>
+                    <p>ShadOblivion</p>
+                </div>
+                <div class="w3-half w3-hover-opacity" onclick="window.open('https://www.instagram.com/shadocosplay/')">
+                    <p><i class="fa fa-instagram w3-xxlarge w3-text-light-grey"></i></p>
+                    <p>ShadOCosplay</p>
+                </div>
             </div>
-            <div class="w3-third w3-deep-purple w3-hover-opacity" onclick="window.open('https://www.youtube.com/channel/UCKuNmyCWcW5YIt2N17e2W_Q')">
-                <p><i class="fa fa-youtube w3-xxlarge w3-text-light-grey"></i></p>
-                <p>SoiBois</p>
+
+            <div class="w3-third w3-deep-purple">
+                <div class="w3-half w3-hover-opacity" onclick="window.open('https://www.youtube.com/@DaSoiBois')">
+                    <p><i class="fa fa-youtube-play w3-xxlarge w3-text-light-grey"></i></p>
+                    <p>SoiBois</p>
+                </div>
+                <div class="w3-half w3-hover-opacity" onclick="window.open('https://www.twitch.tv/dasoibois')">
+                    <p><i class="fa fa-twitch w3-xxlarge w3-text-light-grey"></i></p>
+                    <p>DaSoiBois</p>
+                </div>
             </div>
+
             <!--
             <div class="w3-third w3-dark-grey w3-hover-opacity" onclick="window.location='https://www.reddit.com/user/ShadOblivion_'">
                 <p><i class="fa fa-reddit-alien w3-xxlarge w3-text-light-grey"></i></p>
