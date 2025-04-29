@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<title>X8</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-gray w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-black w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container">
+        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <img src="../resources/Index/Me.png" style="width:45%;" class="w3-round"><br><br>
+        <h4><b>Everest Wild</b></h4>
+        <p class="w3-text-gray">Also known as ShadOblivion</p>
+    </div>
+    <div class="w3-bar-block">
+        <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-mail-reply fa-fw w3-margin-right"></i>RETURN TO MAIN PAGE
+        </a>
+    </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+    <div class="w3-container w3-padding-large">
+        <div style="position:relative;">
+            <img src="../resources/liminal/liminalgame.png"  style="width:100%">
+        </div>
+    </div>
+
+    <div class="w3-container w3-black" style="margin:30px">
+        <p>
+            Liminal Game was a fun experiment that MADE games worked on for a liminal-themed game jam! The idea was to create
+            a liminal horror game about a patient in a hospital with a breathing condition who goes on a journey in the
+            middle of the night for a glass of water!
+        </p>
+        <p>
+            I was the lead designer on the project and worked with our programmer and art team to build a spooky ambiance
+            with immersive gameplay that reflected the modern era the game took place in while also reflecting the main
+            character's breathing condition.
+        </p>
+        <p>
+            We came up with the idea of the character using their phone as a flashlight as well as using it to track
+            the condition of their heart and breathing. I did my best to emphasize the immersion by making the phone feel
+            like a real object that existed in the world.
+        </p>
+        <p>
+            We had a lot of ideas for the game that didn't end up making it into the final prototype, which made it about
+            as far as the second video shown below. We wanted the player's journey to get weirder as they delved further
+            into the hospital, such as the appearance of infinite staircases, flooded hallways, and a cafeteria with
+            furniture that floated above a void. I'm still very proud of how far we came though, I'm especially proud of
+            my level design. Well, I'd say I'm proud of the ambiance and immersion I created, rather than my level
+            design, as it really was just a simple hospital floor.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-dark-grey">
+        <h1 id="gallery">Development Videos</h1>
+        <div style="position:relative;padding-top:56.25%;" class="w3-margin-bottom">
+            <iframe src="https://www.youtube.com/embed/DD9stG8cGOI?si=bCTXYICf6XHJdX5S" frameborder="0" allowfullscreen
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+        </div>
+        <div style="position:relative;padding-top:56.25%;" class="w3-margin-bottom">
+            <iframe src="https://www.youtube.com/embed/zwbSf38gFo4?si=wV_vrKb3lmzsiOh7" frameborder="0" allowfullscreen
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+        </div>
+    </footer>
+
+    <div class="w3-black w3-center w3-padding-24">Website created by Everest Wild with help from
+        <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+<!-- Load Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../dist/js/bootstrap.bundle.min.js"></script>
+<script src="../scripts/index.js"></script>
+</body>
+</html>
